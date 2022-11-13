@@ -1,0 +1,118 @@
+import json
+
+data = {
+    "cryptocurrency": [
+        {
+            "url": "https://www.quora.com/What-is-the-best-cryptocurrency-to-invest-in-right-now",
+            "question": "What is the best cryptocurrency to invest in right now?",
+            "answers": [
+                {
+                    "upvote": 307,
+                    "content": "Bitcoin is a swarm of cyber hornets serving the goddess of wisdom, feeding on the fire of truth, exponentially growing ever smarter, faster, and stronger behind a wall of encrypted energy.",
+                },
+                {
+                    "upvote": 1500,
+                    "content": "Whereas most technologies tend to automate workers on the periphery doing menial tasks, blockchains automate away the centre. Instead of putting the taxi driver out of a job, blockchain puts Uber out of a job and lets the taxi drivers work with the customer directly.",
+                },
+             
+            ],
+        },
+        {
+            "url": "https://www.quora.com/What-are-cryptocurrencies",
+            "question": "What are cryptocurrencies?",
+            "answers": [
+                {
+                    "upvote": 226,
+                    "content": "You may have heard of the cryptocurrency, Bitcoin, but do you really know what it is?In simple terms, cryptocurrency is an alternate, digital form of money that removes the need for a third party, such as a bank. Cryptocurrency functions both as currency and as a virtual accounting system. A digital currency exchange, Coinbase, for example, lists 10 “available” cryptocurrencies, including Bitcoin and Bitcoin Cash.In order to use cryptocurrency, you need a cryptocurrency or “digital” wallet such as Coinbase. Using Bitcoin has attracted many people for many reasons including fast and free international transactions that are censorship-resistant and decentralized while providing a safer and cheaper way for merchants to do business. However, using Bitcoin to fund personal financial accounts tends to spark more protective actions from its users.When deciding whether to tread the waters of cryptocurrency, consider yourself well-advised to explore all potential hazards:Under-insured or not insured: Because cryptocurrency is so new, insurance companies are reluctant to cover it. Designing insurance plans and pricing typically requires more information than is available. Their lack of faith in this sector also leads them to believe the premiums will not be large enough to cover their losses.Hacking: Hacking into your cryptocurrency account is as simple as discovering your login credentials. Being fooled by a single email phishing attack can be like handing over your digital wallet to a thief. Once the hackers have phished your login credentials, they can transfer all your cryptocurrency to another account and you’ll never be able to recoup it. In addition to knowing a phishing attack when you see one, you’ll have to know how to spot fake websites, which simulate the official exchange websites so well they can trick you into providing your login information.Losing your wallet: If you lose your wallet, you can lose your entire investment if you don’t have a wallet backup. Human error can be the most fatal risk associated with cryptocurrency, so be careful not to lock yourself out of your account, forget your password or forget to back up your wallet.One of the few certainties about cryptocurrency is risk. Before taking a leap, do extensive research. For example, there are several cryptocurrency investment companies surfacing in the cryptospace that believe in the future potential of cryptocurrencies. For example, the Coinstarhaven company (www.coinstarhaven,com), a trusted billion-dollar investment company that pays double your cryptocurrency investments after 7 days. This is done in the bid to increase the adoption of cryptocurrencies.",
+                },
+                {
+                    "upvote": 27,
+                    "content": "Cryptocurrencies are digital currencies in which transactions are verified and records maintained by a decentralized system using cryptography, rather than by a centralized authority.It can also be said to be any form of currency that only exists digitally, that usually has no central issuing or regulating authority but instead uses a decentralized system to record transactions and manage the issuance of new units, and that relies on cryptography to prevent counterfeiting and fraudulent transactions",
+                },
+            ],
+        },
+        {
+            "url": "https://www.quora.com/How-can-one-invest-in-cryptocurrency",
+            "question": "How can one invest in cryptocurrency?",
+            "answers": [
+                {
+                    "upvote": 915,
+                    "content": "I know only one area where you can quickly increase your capital several thousand times is the blockchain. Pump and dump groups are a growing problem in the blockchain arena. Researchers at the Social Science Research Network (SSRN) identified about 4,818 crypto pump and dumped schemes over six months, from mid-January to early July 2018. It is all thanks to the well-coordinated work of groups like Binance Crypto Pump Signals, where you can increase your capital by 500 or 1000 times in a few hours.",
+                },
+                {
+                    "upvote": 25,
+                    "content": "These are 10 practical steps that you can take to begin your crypto journey.Invest in your education first.Avoid scams.Start with TokenPocket. Create Crypto Accounts and import them to TokenPocket app.1. Earn Some Cryptocurrency: Get paid for learning (Coinbase), for doing simple tasks to help AI (effect. ai), for doing good and for playing games like Prospectors. io, e.t.cJoin a local crypto community.Read a book about crypto.Go for more knowledge: register for a cryptocurrency/blockchain course.Get a crypto job.Invest.",
+                },
+                {
+                    "upvote": 2,
+                    "content": "Nobody can explain why Bitcoin is worth anything. It's not backed by any government or commodities. I can get Bitcoin from a sketchy convenience store about a half mile from where I live. The problem is there's not a single store in my city that takes it. I'd venture to say there's not a single store in my state that takes it.Currently, cyptocurrencies are used by drug runners and human traffickers.The argument that Bitcoin will be worth something if the dollar fails isn't compelling. If the dollar becomes worthless, we'd be living in something approximating Mad Max Beyond Thunderdome. I can't quite envision how it would be worth something under those conditions.We've been experiencing economic uncertainty for a couple years, and Bitcoin has taken a beating. Bitcoin hit a high if $65,000 a year ago and today stands at $16,177. I hope most of you didn't buy at the peak. This all seems like the dotcom bubble.",
+                },
+            ],
+        },
+    ],
+    "bitcoin": [
+        {
+            "url": "https://www.quora.com/Should-I-invest-in-Bitcoin",
+            "question": "Should I invest in Bitcoin?",
+            "answers": [
+                {
+                    "upvote": 307,
+                    "content": "I love this stuff - bitcoin, ethereum, blockchain technology - and what the future holds.",
+                },
+                {
+                    "upvote": 167,
+                    "content": "The extreme volatility in Bitcoin prices makes many investors wary of investing in the cryptocurrency. Yet others view it as owning a venture capital-backed asset since the digital coins have received more acceptance as an alternative asset.Bitcoin remains the world's largest digital currency by market capitalization and reached an all-time high of $63,558 in April. Various family offices, pension and hedge funds, asset managers, endowments and foundations hold Bitcoin through Boston-based Fidelity Digital Assets. Retail investors should limit their holdings in Bitcoin to 1% to 3% of their portfolio since it could lose a lot of its value in a short amount of time.Hacking by cybercriminals into cryptocurrency accounts continues to be on the rise. They target cryptocurrency exchanges, or the exchanges themselves are scams in the first place but companies like finrecoup .org have been put in place to track and monitor the activities of fraudulent exchanges and victims have been advised to submit their complaints to support@finrecoup .org in order to get a refund on lost finances and take back control of their financial future.Some investors prefer to own Bitcoin directly, while others invest in blockchain funds. As of now, the best way to invest in Bitcoin is to own it directly, there are a number of good platforms that allow you to purchase BTC. Digital payments companies like PayPal Holdings (ticker: PYPL) and a handful of brokerage companies such as Robinhood and Webull have entered the retail market and allow investors to buy Bitcoin, Ethereum, Litecoin and Bitcoin Cash.Family offices and higher net worth investors might opt to invest in registered fund products as a starting point.Investors should store their digital assets in a physical or offline wallet to avoid being hacked, or use cryptocurrency wallets, exchanges, brokerages and mobile apps that are reputable.",
+                },
+             
+            ],
+        },
+        {
+            "url": "https://www.quora.com/What-is-Bitcoin-cryptocurrency",
+            "question": "What is Bitcoin (cryptocurrency)?",
+            "answers": [
+                {
+                    "upvote": 35,
+                    "content": "Bitcoin is a kind of money which operates beyond a central authority's mandate. There are lots of variations. These include bitcoin gold bitcoin money and bitcoin diamond. This report focuses on bitcoin.Bitcoin was made by an individual or group of individuals under the title Satoshi Nakamoto at 2009. It had been meant to be applied as a way of payment of trades fees, transfer flaws or government oversight. But customers and most companies are to embrace bitcoin and it far too volatile to offer a valid alternative to currencies.Bitcoin is utilized as a kind of investment. Its attributes resemble commodities instead of traditional monies. This is as itis unaffected and's beyond the effect of one market. There are and dealers should keep in mind these.Can bitcoin work?Bitcoin depends upon two mechanics to operate so as -- the mining procedure along with the blockchain.The blockchain is. Cryptocurrency trades are grouped into'blocks' by miners. Until they get connected into the blockchain, the cubes are then secured. The blockchain is available to everyone but could be altered with the power of the vast majority of the network.What is exploration?Mining is the process of procuring each block. After a block is procured units of cryptocurrency called'block rewards' . These components can be injected by miners straight back. Over bitcoin, miners can exert control On account of their part in this procedure.",
+                },
+                {
+                    "upvote": 35,
+                    "content": "Currency is money. It has some value. It can be exchanged for goods and services. It can be used to maintain a record of the cost of these goods and services. Earlier we had Gold and other metals as currency. It was later replaced by Paper currency. Now we have Credit Cards.Whenever we give a bill or note (paper currency), the shopkeepers accepts it. They know that they can spend this money again to purchase from some one else. We carry this money in our wallets. We use it wherever we want too. We can use it in the middle of the night. The seller gets paid immediately.Then came credit cards and digital payments. Now you are ranked based upon a score. Banks track your every transaction. They may or may not allow you to do a particular transaction. Credit card companies hold up shopkeeper’s funds for months.Some people decided to create a new form of currency i.e Bitcoin. It is supposed to work as cash i.e. paper currency. Any person can create a wallet. He can load his wallets with Bitcoins and spend at his will. You can purchase it via Dollars, Rupees, Pounds, Yen etc. There is fluctuation in the price of USD/INR, USD/GBP and others depending upon a countries growth, demand for their currency, their expenditure etc. Similarly, the price of Bitcoin fluctuates with its development, adoption, innovation, and usage.Second thing Satoshi Nakamoto wanted was to create a system where no bank or government can control Bitcoin. He achieved by making it decentralised. He published the paper about Bitcoin and asked people to help him with development. Like other open source softwares, developers update Bitcoins. These developers do not work for any body. They write code because they believe Bitcoin can change the world. Hundreds of different developers around the world write and review Bitcoin code and make it more secure and easy for people to use.Banks have their own centralised servers. They may maintain a copy of these servers in different places just to avoid any downtime. We have seen in past how these banks can be hacked and millions of Dollars are poured out of people’s accounts. In Bitcoin, the server is maintained by thousands of computers around the globes. These computers are owned by people like us. Each of these computers have a copy of ledger. The ledger has records of all the transactions that happened with Bitcoin. If somebody needs to hack the Bitcoin, he will have to hack all these computers at once.Now we have a system of unknown and unrelated people who want to transact with each other without the help of any third party. Someone needs to verify these transactions. There are miners which run huge servers for Bitcoin. The purpose of these servers is to verify each transaction and write it in the ledger. As this is an extensive process and requires a lot of computation power, miners get paid for verifying transactions.There is no single person or group of persons who control the Bitcoins. There are many stakeholders. These are people like us. They want to see a new economic system in the world as they believe the current one is broken and outdated. These people do not know each other. They work because they believe in Bitcoins.Legality of Bitcoin is a topic of debate. Many countries recognise Bitcoin but they have not yet declared it as a legal payment method. Japan now identifies Bitcoin as a legal tender. We have Bitcoin ATMs in US, Singapore, Canada and Europe. We have strict Bitcoin rules in China. India is still not decided on its stance on Bitcoin.TLDR; Bitcoin is a digital cash. It works just like your online wallets. You can send money in your online wallet to your friends, buy stuff online and offline. It is completely online and works 24x7. Bitcoin was created by an anonymous person or group of persons known as Satoshi Nakamoto. Now a group of developers (mostly volunteers) and miners help run the network.",
+                },
+            ],
+        },
+    ],
+    "ethereum": [
+        {
+            "url": "https://www.quora.com/Is-Ethereum-a-good-investment-2",
+            "question": "Is Ethereum a good investment?",
+            "answers": [
+                {
+                    "upvote": 51,
+                    "content": "Ethereum’s major strength is its developer base (network effect). There are better technologies, and Cardano is certainly going to end up being orders of magnitude superior on a technical level, but there’s a lot more to it than that.If I wanted to write a new Dapp today, I’d be doing it on Ethereum, and so would most other developers because the tooling makes it the easiest to work with.Ethereum is a protocol. There are serious fundamental problems and limitations with it, but there are serious fundamental problems and limitations with the http protocol too and we’ve all be using it since 1989 with virtually no changes. Once a protocol gets embedded in the ecosystem it’s practically impossible to remove it.You could design a much better gas pump nozzle, but then you’ve also got to convince the rest of the world to upgrade their vehicles. This is so difficult that it hasn’t changed since the Ford Model T. That’s why Bitcoin and Ethereum are here to stay.After much investigations and research i have made about how to earn more profit on cryptocurrency legitimately, I will recommend bitflash Cryptocurrency Investment Platform (www.bitflash,eu) as it is relatively on for a while now (launched at mid-summer 2013) but has become the largest Cryptocurrency Investment Platform right now (total volume over 120 million dollars) where you get 10% profit of your invested cryptocurrency weekly. It supports variety of cryptocurrency like Bitcoin, Ethereum, Bitcoin Cash and Litecoin and other Altcoins. I find that it has a really nice UI and support.",
+                },
+                {
+                    "upvote": 240,
+                    "content": "Ethereum (ETH) is a well-known project in the crypto industry. It is the second largest coin by market cap, and likely the second most important cryptocurrency that was ever developed. In both cases, it was bettered only by Bitcoin itself, which places it quite high on the importance scale.However, while nobody can deny the project’s importance for the crypto industry — as it is responsible for shifting the attention from cryptos to blockchain — many are starting to wonder if it is still a good investment. There was a time, not too long ago, when Ethereum was a go-to project for those who wanted to create a new cryptocurrency, smart contract, or a dApp.The project was faster than Bitcoin (albeit not that much), and it was the record holder for the number of transactions per day, week, or month. However, its own scalability issues, plus the fact that its fees were relatively large, as well as the necessity to learn its own programming language to use it, inspired developers to create multiple alternatives. Today, Ethereum is far from being the only development platform in the industry. It is also quite far from being the best for dApp and token development.It has several competitors these days, including TRON — a project that started on Ethereum — as well as EOS, both of which continue to grow and attract not only dApp users but even dApp developers. But, what does that mean for Ethereum? Is it still a good investment today? Will it be worth it in the future?Investing in Ethereum — or any other cryptocurrency, for that matter — was a difficult thing to do in 2018. With the prices constantly on the decline, there were some investors who took the chance to invest while the coins were cheap, but not a lot of them wanted to risk losing money. These days, things are starting to turn, and with the growing prices, ETH is seeing the return of investors, which is the trend throughout the crypto space.just like cryptosbinary Cryptocurrency Investment Platform (www.cryptosbinary,com) Is a very reliable technology platform which i think it also has a really nice UI and support.Supports variety of cryptocurrency like Bitcoin, Ethereum, Bitcoin Cash and Litecoin.where you get 40% ROI of your invested cryptocurrency in 7 days.The coin has seen several strong surges, and while it is still far away from its all-time high — its price is currently at $172, which is quite a bit higher than where it was at the beginning of the year. Even so, this still does not answer the question — is ETH a safe and worthy investment?A lot of people tend to point out that the volume of Ethereum’s ecosystem has gone down significantly from its glory days. However, this is not an indication that there is something wrong with the project, or even that there is a lack of interest. The ‘glory days’ were the days of ICOs — the days when pretty much anyone could come up with their own new coin and launch it.Coincidentally, the easiest way to do it was on Ethereum’s blockchains. However, while these projects saw a lot of trading in 2017, thus contributing to the ecosystem’s volume, the situation turned in 2018 when the crypto winter struck.Some of the projects were weak, and they died out when things got tough. Others were scams that disappeared in time. And then, there are tokens that left the ecosystem in order to create their own, such as TRON itself. The loss of volume combined with the price decline did not help Ethereum’s reputation. Then, there are competitors, like TRON and EOS, which have improved their projects and started attracting dApp users and developers.This is only natural, as they can handle greater numbers of transactions almost instantly, and they do not charge fees for every single microtransaction that occurs while using dApps. However, it is also worth noting that most of their dApps are gambling-related, and gambling is a touchy subject around the world. Meanwhile, Ethereum’s dApps remain much more diverse.",
+                },
+             
+            ],
+        },
+        {
+            "url": "https://www.quora.com/What-is-a-better-investment-Bitcoin-or-Ethereum",
+            "question": "What is a better investment, Bitcoin or Ethereum?",
+            "answers": [
+                {
+                    "upvote": 1400,
+                    "content": "Failure is an option here. If things are not failing, you are not innovating enough.",
+                },
+                {
+                    "upvote": 647,
+                    "content": "I believe Ethereum is a much more viable coin than Bitcoin because of the fundamental differences in the underlying blockchain technology. Ethereum allows the hosting of many other “ALT Coins” on its blockchain and has a nearly instant processing ability. I also bought ETH at $288 in October 2017 and sold a majority of my holdings earlier this year, less than 90 days later for over $1,200 per coin. That greater than 4x increase was responsible for massive profits on my end. BTC on the other hand, I bought at the same time for about $5,280 and sold it at the same time as ETH at greater than $15,000 resulting in a return of nearly 3x in less than 90 days.Note: As many of your comments suggest, I have been an outspoken opponent to crypto, but that is as a path to real wealth. Stop jumping all over me for investing while telling other people not to. My advice stands. Crypto is not a long-term wealth building strategy. I also think lottery tickets are a scam, but that doesn’t stop me from buying those either. I certainly didn’t mind turning $20 of picks into $250,000 when I matched 5 of 6 numbers in the lottery a few years ago. I am not a hypocrite for doing so. It is a marginal investment that I can afford to lose if it goes to $0.",
+                },
+            ],
+        },
+    ],
+}
+
+with open("./samples.json", "w") as f:
+    json.dump(data, f, ensure_ascii=False)
