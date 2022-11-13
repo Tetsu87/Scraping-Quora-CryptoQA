@@ -72,9 +72,9 @@ for topic in topics:
         if count%20 ==0:
             print(str(count) + "/"+ str(total) + " "+ str(datetime.datetime.now() - start_time))
 
-# save data as json format
-with open("./samples2.json", "w") as f:
-    json.dump(quora_question_answers, f, ensure_ascii=False)
+    # save data as json format
+    with open("./results/" + topic + ".json", "w") as f:
+        json.dump(quora_question_answers, f, ensure_ascii=False)
 
 # display processing time
 end_time = datetime.datetime.now()

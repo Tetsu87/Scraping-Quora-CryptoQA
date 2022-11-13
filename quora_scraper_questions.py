@@ -44,24 +44,50 @@ for topic in topics:
     last_top = 1
 
     scroll_count = 0
-    
-    last_height = driver.execute_script("return document.body.scrollHeight")
     stuck_count = 0
+    
+    # last_height = driver.execute_script("return document.body.scrollHeight")
+    # stuck_count = 0
+
+    # scroll down 
+    # while True:
+    #     driver.execute_script("window.scrollTo(0,document.body.scrollHeight);")
+    #     time.sleep(2)
+    #     new_height = driver.execute_script("return document.body.scrollHeight")
+    #     if new_height == last_height:
+    #         stuck_count +=1
+    #         if stuck_count ==10:
+    #             break
+    #     stuck_count = 0
+    #     last_height = new_height
+    #     scroll_count +=1
+    #     time.sleep(2)
+
+    #     if scroll_count == 100:
+    #         break
 
     while True:
-        driver.execute_script("window.scrollTo(0,document.body.scrollHeight);")
-        time.sleep(2)
-        new_height = driver.execute_script("return document.body.scrollHeight")
-        if new_height == last_height:
+        last_height = driver.execute_script("return document.body.scrollHeight")
+        top = last_top
+
+        while top < last_height:
+            top += int(win_height * 0.8)
+            driver.execute_script("window.scrollTo(0, %d)" % top)
+            time.sleep(0.5)
+
+        time.sleep(1)
+        new_last_height = driver.execute_script("return document.body.scrollHeight")
+
+        if last_height == new_last_height:
             stuck_count +=1
             if stuck_count ==10:
                 break
         stuck_count = 0
-        last_height = new_height
-        scroll_count +=1
-        time.sleep(2)
 
-        if scroll_count == 100:
+        last_top = last_height
+
+        scroll_count +=1
+        if scroll_count ==500:
             break
 
     time.sleep(3)
