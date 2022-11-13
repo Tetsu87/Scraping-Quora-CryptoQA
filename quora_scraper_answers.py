@@ -7,8 +7,6 @@ import csv
 import json
 import os
 
-# core data
-quora_question_answers = {}
 
 # start time
 start_time = datetime.datetime.now()
@@ -27,6 +25,7 @@ def get_voteCount(contents, upvote_index):
     return end_index
 
 for topic in topics:
+    quora_question_answers = {}
     topic = topic.replace("\n","")
     quora_question_answers[topic] = []
 

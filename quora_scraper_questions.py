@@ -79,11 +79,17 @@ for topic in topics:
         new_last_height = driver.execute_script("return document.body.scrollHeight")
 
         if last_height == new_last_height:
+            time.sleep(30)
+            driver.execute_script("window.scrollTo(0, %d)" % top)
+            time.sleep(30)
             stuck_count +=1
-            if stuck_count ==10:
-                break
-        stuck_count = 0
-
+        
+        if stuck_count == 5 or stuck_count ==10 or stuck_count >=15:
+            print(stuck_count)
+    
+        if stuck_count ==20:
+            break
+        
         last_top = last_height
 
         scroll_count +=1
