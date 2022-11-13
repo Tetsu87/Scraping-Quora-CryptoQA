@@ -1,6 +1,9 @@
 # Scraping-Quora-CryptoQA
 
-## Web Scraping Instructions
-Run scrape.py to output the results of web scraping as output.json.  
 ## Web Scraping Description
-The web scraping code is described in scrape.py. Beautiful Soup was used to scrape the ten most recent news items listed at https://www.aljazeera.com/where/mozambique/. The JSON contains the title, subtitle, contents, image(URL link), figure caption, publication date, and data source. See comments in scrape.py for specific functionality of the code.  
+This is a Web scraping tool written in Python for getting a pair of a question and answers in Quora(https://www.quora.com/). Selenium was used to scrape a list of questions as quora requires a manual scrolling. 
+
+## Web Scraping Instructions
+1.Run quora_scraper_questions.py to gain a list of questions and urls
+2.Rum quora_scraper_answers.py to create json files containing multpile answers per a quesion and the number of upvotes
+
