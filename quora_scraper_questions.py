@@ -5,8 +5,6 @@ from bs4 import BeautifulSoup
 
 import datetime
 import time
-import csv
-import json
 
 # start time
 start_time = datetime.datetime.now()
@@ -16,6 +14,7 @@ file_question_topics = open("topic_list_test.txt", mode="r", encoding="utf-8")
 topics = file_question_topics.readlines()
 
 for topic in topics:
+    topic = topic.replace("\n","")
 
     print("starting new topic: " + str(topic))
     chrome_options = Options()
@@ -47,13 +46,17 @@ for topic in topics:
     scroll_count = 0
     
     last_height = driver.execute_script("return document.body.scrollHeight")
+    stuck_count = 0
 
     while True:
         driver.execute_script("window.scrollTo(0,document.body.scrollHeight);")
         time.sleep(2)
         new_height = driver.execute_script("return document.body.scrollHeight")
-        # if new_height == last_height:
-        #     break
+        if new_height == last_height:
+            stuck_count +=1
+            if stuck_count ==10:
+                break
+        stuck_count = 0
         last_height = new_height
         scroll_count +=1
         time.sleep(2)
@@ -65,16 +68,21 @@ for topic in topics:
 
     elem_questions = driver.find_elements(By.CLASS_NAME, "q-box.qu-borderBottom.qu-p--medium")
 
-    with open("questions/question_list_" + topic + "2.txt", "w",encoding="utf-8") as f:
+    valid_num = 0
+    path = "./questions/" + topic +  ".txt"
+    with open(path, "w",encoding="utf-8") as f:
         for elem_question in elem_questions:
             elem_questions_href = elem_question.find_element(By.TAG_NAME, "a").get_attribute('href')
-            f.write(elem_questions_href + "\n")
+            if elem_questions_href.startswith("https://www.quora.com/"):
+                f.write(elem_questions_href + "\n")
+                valid_num +=1
 
     time.sleep(2)
-    print(len(elem_questions))
+    print("Total URL numbers: " + str(len(elem_questions)))
+    print("Total valid URL numbers: " + str(valid_num))
 
     driver.quit()
 
-# end time
+# display processing time
 end_time = datetime.datetime.now()
-print(end_time - start_time)
+print("\ntotal time: " + str(end_time - start_time))

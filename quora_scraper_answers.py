@@ -30,9 +30,12 @@ for topic in topics:
     topic = topic.replace("\n","")
     quora_question_answers[topic] = []
 
-    questions_list = open("question_list_" + topic + ".txt", "r",encoding="utf-8")
+    questions_list = open("./questions/" + topic + ".txt", "r",encoding="utf-8")
     urls = questions_list.readlines()
 
+    total = len(urls)
+
+    count = 0
     for url in urls:
         question_answer_pair = {}
         question_answer_pair["url"] = url.replace('\n','')
@@ -65,16 +68,14 @@ for topic in topics:
         question_answer_pair["answers"] = answers
         quora_question_answers[topic].append(question_answer_pair)
 
-        # pprint(question_answer_pair)
-        pprint(quora_question_answers)
-    
+        count +=1
+        if count%20 ==0:
+            print(str(count) + "/"+ str(total) + " "+ str(datetime.datetime.now() - start_time))
 
-    
-# save data as a json,
-
-# json format should be like {date;xxx, category:xxx, question:xxx, answer:xxx}
+# save data as json format
 with open("./samples2.json", "w") as f:
     json.dump(quora_question_answers, f, ensure_ascii=False)
-# end time
+
+# display processing time
 end_time = datetime.datetime.now()
 print(end_time - start_time)
