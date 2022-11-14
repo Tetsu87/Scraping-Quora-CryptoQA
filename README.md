@@ -5,7 +5,7 @@ Developed a Web scraping tool in Python that collects a number of Q&A pairs in Q
 
 ## Web Scraping Instructions
 1. Run quora_scraper_questions.py to gain a list of questions and URLs
-2. Rum quora_scraper_answers.py to create JSON files containing multiple answers per a question and the number of upvotes
+2. Run quora_scraper_answers.py to create JSON files containing multiple answers per a question and the number of upvotes
 
 ## Notes
 1. Download an appropriate chromedriver
