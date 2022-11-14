@@ -102,7 +102,7 @@ for topic in topics:
             if scroll_count ==500:
                 break
 
-        except TimeoutError:
+        except:
             print("TimeoutException occurred. Save data collected so far.")
             break
 
