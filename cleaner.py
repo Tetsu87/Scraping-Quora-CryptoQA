@@ -30,5 +30,5 @@ for file in files:
             for answer in question["answers"]:
                 answer['content'] = clean_text(answer['content'],unicodes)
                 print(answer['content'])
-        path = "./cleaned_results/" + topic + ".json"
+        path = "./results/" + topic + ".json"
         save_data_as_json(data,path)
