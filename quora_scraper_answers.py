@@ -12,7 +12,7 @@ import os
 start_time = datetime.datetime.now()
 
 # read questions form a file
-file_question_topics = open("topic_list_test_a.txt", mode="r", encoding="utf-8")
+file_question_topics = open("topic_list_answers.txt", mode="r", encoding="utf-8")
 topics = file_question_topics.readlines()
 
 def get_voteCount(contents, upvote_index):
@@ -23,6 +23,11 @@ def get_voteCount(contents, upvote_index):
             end +=1
         end_index.append(end)
     return end_index
+
+def save_data_as_json(data, path,ensure_ascii=True):
+    with open(path, "w") as f:
+        json.dump(data, f, ensure_ascii=ensure_ascii)
+
 
 for topic in topics:
     quora_question_answers = {}
@@ -72,8 +77,8 @@ for topic in topics:
             print(str(count) + "/"+ str(total) + " "+ str(datetime.datetime.now() - start_time))
 
     # save data as json format
-    with open("./results/" + topic + ".json", "w") as f:
-        json.dump(quora_question_answers, f, ensure_ascii=False)
+    path = "./results/" + topic + ".json"
+    save_data_as_json(quora_question_answers,path)
 
 # display processing time
 end_time = datetime.datetime.now()

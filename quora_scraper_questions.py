@@ -13,6 +13,12 @@ start_time = datetime.datetime.now()
 file_question_topics = open("topic_list_test.txt", mode="r", encoding="utf-8")
 topics = file_question_topics.readlines()
 
+def flexible_sleep(stuck_count):
+    if stuck_count <=5:
+        return 0.5
+    else:
+        return stuck_count/10
+
 for topic in topics:
     topic = topic.replace("\n","")
 
@@ -67,33 +73,37 @@ for topic in topics:
     #         break
 
     while True:
-        last_height = driver.execute_script("return document.body.scrollHeight")
-        top = last_top
+        try:
+            last_height = driver.execute_script("return document.body.scrollHeight")
+            top = last_top
 
-        while top < last_height:
-            top += int(win_height * 0.8)
-            driver.execute_script("window.scrollTo(0, %d)" % top)
-            time.sleep(0.5)
+            while top < last_height:
+                top += int(win_height * 0.8)
+                driver.execute_script("window.scrollTo(0, %d)" % top)
+                time.sleep(flexible_sleep(stuck_count))
 
-        time.sleep(1)
-        new_last_height = driver.execute_script("return document.body.scrollHeight")
+            time.sleep(flexible_sleep(stuck_count*2))
+            new_last_height = driver.execute_script("return document.body.scrollHeight")
 
-        if last_height == new_last_height:
-            time.sleep(30)
-            driver.execute_script("window.scrollTo(0, %d)" % top)
-            time.sleep(30)
-            stuck_count +=1
-        
-        if stuck_count == 5 or stuck_count ==10 or stuck_count >=15:
+            if last_height == new_last_height:
+                time.sleep(10)
+                driver.execute_script("window.scrollTo(0, %d)" % top)
+                time.sleep(10)
+                stuck_count +=1
+            
             print(stuck_count)
-    
-        if stuck_count ==20:
-            break
         
-        last_top = last_height
+            if stuck_count ==80:
+                break
+            
+            last_top = last_height
 
-        scroll_count +=1
-        if scroll_count ==500:
+            scroll_count +=1
+            if scroll_count ==500:
+                break
+
+        except TimeoutError:
+            print("TimeoutException occurred. Save data collected so far.")
             break
 
     time.sleep(3)
