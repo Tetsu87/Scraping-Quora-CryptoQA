@@ -1,1 +1,4 @@
-Dogecoin
+Bitcoin
+Cryptocurrency
+Ethereum
+Solana

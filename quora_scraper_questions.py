@@ -49,7 +49,7 @@ for topic in topics:
     win_height = driver.execute_script("return window.innerHeight")
     last_top = 1
 
-    scroll_count = 0
+    # scroll_count = 0
     stuck_count = 0
     
     # last_height = driver.execute_script("return document.body.scrollHeight")
@@ -86,21 +86,21 @@ for topic in topics:
             new_last_height = driver.execute_script("return document.body.scrollHeight")
 
             if last_height == new_last_height:
-                time.sleep(10)
+                time.sleep(5)
                 driver.execute_script("window.scrollTo(0, %d)" % top)
-                time.sleep(10)
+                time.sleep(5)
                 stuck_count +=1
             
             print(stuck_count)
         
-            if stuck_count ==80:
+            if stuck_count ==15:
                 break
             
             last_top = last_height
 
-            scroll_count +=1
-            if scroll_count ==500:
-                break
+            # scroll_count +=1
+            # if scroll_count ==500:
+            #     break
 
         except:
             print("TimeoutException occurred. Save data collected so far.")
@@ -114,10 +114,13 @@ for topic in topics:
     path = "./questions/" + topic +  ".txt"
     with open(path, "w",encoding="utf-8") as f:
         for elem_question in elem_questions:
-            elem_questions_href = elem_question.find_element(By.TAG_NAME, "a").get_attribute('href')
-            if elem_questions_href.startswith("https://www.quora.com/"):
-                f.write(elem_questions_href + "\n")
-                valid_num +=1
+            try:
+                elem_questions_href = elem_question.find_element(By.TAG_NAME, "a").get_attribute('href')
+                if elem_questions_href.startswith("https://www.quora.com/"):
+                    f.write(elem_questions_href + "\n")
+                    valid_num +=1
+            except:
+                pass
 
     time.sleep(2)
     print("Total URL numbers: " + str(len(elem_questions)))

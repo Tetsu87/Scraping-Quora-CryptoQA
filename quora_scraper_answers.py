@@ -63,7 +63,7 @@ for topic in topics:
         end_index = get_voteCount(contents, upvote_index)
 
         answers = []
-        for i in range(len(text_index)):
+        for i in range(len(text_index)-1):
             answer = {}
             answer["upvote"] = int(contents[upvote_index[i]+1:end_index[i]])
             answer["content"] = contents[text_index[i]+2:upvote_index[i]-17]
