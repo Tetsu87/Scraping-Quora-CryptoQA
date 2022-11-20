@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
+import traceback
 
 import datetime
 import time
@@ -51,6 +52,7 @@ for topic in topics:
 
     # scroll_count = 0
     stuck_count = 0
+    error_count = 0
     
     # last_height = driver.execute_script("return document.body.scrollHeight")
     # stuck_count = 0
@@ -78,7 +80,7 @@ for topic in topics:
             top = last_top
 
             while top < last_height:
-                top += int(win_height * 0.8)
+                top += int(win_height * 0.9)
                 driver.execute_script("window.scrollTo(0, %d)" % top)
                 time.sleep(flexible_sleep(stuck_count))
 
@@ -93,7 +95,7 @@ for topic in topics:
             
             print(stuck_count)
         
-            if stuck_count ==15:
+            if stuck_count ==50:
                 break
             
             last_top = last_height
@@ -103,8 +105,12 @@ for topic in topics:
             #     break
 
         except:
-            print("TimeoutException occurred. Save data collected so far.")
-            break
+            # print("TimeoutException occurred. Save data collected so far.")
+            error_count +=1
+            traceback.print_exc()
+            if error_count >=3:
+                break
+            continue
 
     time.sleep(3)
 
@@ -123,6 +129,7 @@ for topic in topics:
                 pass
 
     time.sleep(2)
+    print("{} scraping finished!!".format(topic))
     print("Total URL numbers: " + str(len(elem_questions)))
     print("Total valid URL numbers: " + str(valid_num))
 

@@ -4,12 +4,24 @@ iota
 
 
 completed
+Bitcoin 8
 eos all complete 237 collected
 cardano 2273 collected, timeoutException
 litecoin 982 out of 2826 well done!
 stellar 905 well done!!
 tether 1679 completed!!
 XRP 2400!
+Dogecoin 2296
+Solana 646!
+FTX 563 completed
+Binance 1965 
+Bitcoin cash 1092
+Polkadot 424 
+Monero 1435
+BNB 1305
+
+
+
 
 
 
